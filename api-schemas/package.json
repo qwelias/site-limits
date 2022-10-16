@@ -1,0 +1,21 @@
+{
+    "name": "site-limits-api-schemas",
+    "version": "0.0.0",
+    "sideEffects": false,
+    "files": [
+        "*.ts",
+        "*.gen.json"
+    ],
+    "scripts": {
+        "test": "tsc -p . --noEmit",
+        "build": "tfs gen *.ts"
+    },
+    "devDependencies": {
+        "typescript": "^4.8.4"
+    },
+    "peerDependencies": {
+        "@coobaha/typed-fastify": "*"
+    },
+    "dependencies": {
+    }
+}

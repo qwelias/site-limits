@@ -1,0 +1,30 @@
+version: '3'
+services:
+  site-limits-api:
+    build:
+      context: .
+      dockerfile: api.Dockerfile
+    logging:
+      driver: json-file
+      options:
+        max-file: '5'
+        max-size: 10m
+    ports:
+      - 8085:8085
+    env_file:
+      - site-limits-api.env
+    restart: unless-stopped
+  site-limits-db:
+    image: mongo:4
+    ports:
+      - 27017
+    volumes:
+      - ./db:/data/db
+    env_file:
+      - site-limits-db.env
+    logging:
+      driver: json-file
+      options:
+        max-file: '5'
+        max-size: 10m
+    restart: unless-stopped

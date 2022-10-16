@@ -1,0 +1,9 @@
+{
+    "name": "site-limits",
+    "version": "0.0.0",
+    "scripts": {},
+    "workspaces": [
+        "api",
+        "api-schemas"
+    ]
+}

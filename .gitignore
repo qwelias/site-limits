@@ -1,0 +1,12 @@
+node_modules
+*.log
+tmp
+*.env
+
+dist
+db
+*.gen.json
+
+.npmrc
+
+*.tsbuildinfo

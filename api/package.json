@@ -1,0 +1,25 @@
+{
+    "name": "site-limits-api",
+    "version": "0.0.0",
+    "scripts": {
+        "build": "tsc --build .",
+        "dev": "npm run build && node --inspect dist",
+        "start": "node dist"
+    },
+    "dependencies": {
+        "@coobaha/typed-fastify": "^1.1.0",
+        "@dnlup/fastify-traps": "^2.0.0",
+        "@fastify/swagger": "^7.6.1",
+        "site-limits-api-schemas": "^0.0.0",
+        "fastify": "^4.8.1",
+        "lodash-es": "^4.17.21",
+        "mongodb": "^4.10.0",
+        "pino": "^8.6.1",
+        "typescript": "^4.8.4"
+    },
+    "devDependencies": {
+        "@types/node": "^18.8.5",
+        "dotenv-cli": "^5.1.0",
+        "setch": "^2.0.2"
+    }
+}
