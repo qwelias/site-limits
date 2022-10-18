@@ -1,6 +1,6 @@
 import { makeSetch, mime } from 'setch'
 
-const fetch = makeSetch('http://localhost:8085/v1/site',
+const fetch = makeSetch('http://80.87.111.227:8085/v1/site',
     {
         headers: { accept: mime.json, 'content-type': mime.json }
     },

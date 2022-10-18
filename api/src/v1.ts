@@ -82,8 +82,8 @@ const checkAndCalcHeightLimits = (building_limits: Polygon[], height_plateaus: P
 
     const building_plateaus: Plateau[] = []
     for (const bl of building_limits) for (const hp of height_plateaus) {
-        const polygons = intersect(bl, hp.polygon) as Polygon[] | false
-        if (polygons) building_plateaus.push(
+        const polygons = intersect(bl, hp.polygon) as Polygon[]
+        if (polygons.length) building_plateaus.push(
             ...polygons.map(polygon => ({ polygon, height: hp.height }))
         )
     }

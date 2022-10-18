@@ -1,6 +1,7 @@
 version: '3'
 services:
   site-limits-api:
+    init: true
     build:
       context: .
       dockerfile: api.Dockerfile
